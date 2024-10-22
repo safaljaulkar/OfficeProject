@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-17T20:18:40 IST" name="Default suite" finished-at="2024-10-17T20:18:56 IST" duration-ms="16224">
+  <suite started-at="2024-10-22T21:06:19 IST" name="Default suite" finished-at="2024-10-22T21:06:37 IST" duration-ms="18446">
     <groups>
     </groups>
-    <test started-at="2024-10-17T20:18:40 IST" name="Default test" finished-at="2024-10-17T20:18:56 IST" duration-ms="16224">
-      <class name="computer.Computers">
-        <test-method is-config="true" signature="setup()[pri:0, instance:computer.Computers@694abbdc]" started-at="2024-10-17T20:18:40 IST" name="setup" finished-at="2024-10-17T20:18:52 IST" duration-ms="11763" status="PASS">
+    <test started-at="2024-10-22T21:06:19 IST" name="Default test" finished-at="2024-10-22T21:06:37 IST" duration-ms="18446">
+      <class name="shoppingcart.Checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:shoppingcart.Checkout@44ebcd03]" started-at="2024-10-22T21:06:19 IST" name="setup" finished-at="2024-10-22T21:06:29 IST" duration-ms="10427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyNotebookAddToCart()[pri:2, instance:computer.Computers@694abbdc]" started-at="2024-10-17T20:18:52 IST" name="VerifyNotebookAddToCart" finished-at="2024-10-17T20:18:56 IST" duration-ms="4202" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="VerifyUpdateShoppingCart()[pri:0, instance:shoppingcart.Checkout@44ebcd03]" started-at="2024-10-22T21:06:29 IST" name="VerifyUpdateShoppingCart" finished-at="2024-10-22T21:06:37 IST" duration-ms="7869" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=129.0.6668.101)
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [791ce73204872c46cc222c774d12f1aa, clickElement {id=f.DC8E9DAD8A12D21D813388FDA20CF154.d.04C323DB2E646F2C76CAFA673C0F0876.e.1575}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50840}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50840/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (791ce73204872c46cc222c774d12f1aa)] -> xpath: //ul[@class='top-menu']//a[normalize-space()='Notebooks']]
-Session ID: 791ce73204872c46cc222c774d12f1aa]]>
+Command: [b5478be518ccd39d91f6b6b7a71537d8, clearElement {id=f.E89AB5A0A70B532A8AE6F00BF1F7750C.d.02CE9AB2A732BF03F35EE0D24B3AD007.e.2139}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55466/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5478be518ccd39d91f6b6b7a71537d8)] -> xpath: //input[@class='qty-input']]
+Session ID: b5478be518ccd39d91f6b6b7a71537d8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=129.0.6668.101)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [791ce73204872c46cc222c774d12f1aa, clickElement {id=f.DC8E9DAD8A12D21D813388FDA20CF154.d.04C323DB2E646F2C76CAFA673C0F0876.e.1575}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50840}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50840/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (791ce73204872c46cc222c774d12f1aa)] -> xpath: //ul[@class='top-menu']//a[normalize-space()='Notebooks']]
-Session ID: 791ce73204872c46cc222c774d12f1aa
+Command: [b5478be518ccd39d91f6b6b7a71537d8, clearElement {id=f.E89AB5A0A70B532A8AE6F00BF1F7750C.d.02CE9AB2A732BF03F35EE0D24B3AD007.e.2139}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55466/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5478be518ccd39d91f6b6b7a71537d8)] -> xpath: //input[@class='qty-input']]
+Session ID: b5478be518ccd39d91f6b6b7a71537d8
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -45,8 +47,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at computer.Computers.VerifyNotebookAddToCart(Computers.java:48)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+at shoppingcart.Checkout.VerifyUpdateShoppingCart(Checkout.java:25)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -75,15 +77,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyNotebookAddToCart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:computer.Computers@694abbdc]" started-at="2024-10-17T20:18:56 IST" name="teardown" finished-at="2024-10-17T20:18:56 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- VerifyUpdateShoppingCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:shoppingcart.Checkout@44ebcd03]" started-at="2024-10-22T21:06:37 IST" name="teardown" finished-at="2024-10-22T21:06:37 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- computer.Computers -->
+      </class> <!-- shoppingcart.Checkout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
