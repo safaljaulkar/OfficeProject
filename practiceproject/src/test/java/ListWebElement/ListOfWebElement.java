@@ -16,15 +16,9 @@ public class ListOfWebElement extends Login  {
 		ListOfWebElement list =new ListOfWebElement();
 		list.VerifyLogin();
 		
-		List<WebElement> elements = driver.findElements(By.xpath("//*[@class='top-menu-triangle']"));
-	
-		
+		List<WebElement> elements = driver.findElements(By.xpath("top-menu-triangle"));
 		  for (WebElement test : elements) {
-		  test.click();
-		
-		
-
-	}
-	
+		  test.click();	
+		  }
 	}
 }

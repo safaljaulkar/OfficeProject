@@ -10,9 +10,9 @@ import signinsignup.Login;
 
 public class Computers extends Login {
 
+	
 	@Test(priority = 1)
 	public void VerifyDesktopAddToCart() {
-
 		Computers dj = new Computers();
 		dj.VerifyLogin();
 
@@ -38,10 +38,14 @@ public class Computers extends Login {
 
 	}
 
+	private void VerifyLogin() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	@Test(priority = 2)
 
 	public void VerifyNotebookAddToCart() {
-
 		Computers dj = new Computers();
 		dj.VerifyLogin();
 
@@ -66,7 +70,6 @@ public class Computers extends Login {
 	@Test(priority = 3)
 
 	public void VerifyAccessoriesAddToCart() {
-
 		Computers dj = new Computers();
 		dj.VerifyLogin();
 

@@ -34,7 +34,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <artifactId>webdriver-selenium</artifactId>
     <version>0.9.7376</version>
 </dependency>
-
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version> <!-- Check for the latest version -->
+</dependency>
 </dependencies>
 
 </project>
