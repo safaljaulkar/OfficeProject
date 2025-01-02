@@ -18,7 +18,7 @@ public class Login extends BaseTest {
 		
 	        
 		action.login("Jerry1489@gmail.com", "Jerry@1997");  
-		cart.AddBook(3);                                      
+		cart.AddBook();                                      
 		      
 		
 		action.logout();

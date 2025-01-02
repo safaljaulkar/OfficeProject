@@ -39,6 +39,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version> <!-- Check for the latest version -->
 </dependency>
+<dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.2.0</version>
+    </dependency>
 </dependencies>
 
 </project>
