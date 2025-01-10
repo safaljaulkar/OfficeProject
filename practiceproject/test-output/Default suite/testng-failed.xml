@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="VerifyLogin"/>
+          <include name="VerifyAddBook"/>
         </methods>
       </class> <!-- logintest.Login -->
     </classes>

@@ -1,6 +1,7 @@
 package action;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import base.BaseTest;
 import locators.AddBookCartLocator;
@@ -20,8 +21,12 @@ public class LoginAction extends BaseTest {
 		driver.findElement(By.xpath(locator.RememberMe)).click();
 		driver.findElement(By.xpath(locator.LoginButton)).click();
 
+		String exp = ("Demo Web Shop");
+		String act = driver.getTitle();
+		Assert.assertEquals(act, exp);
+
 	}
-	
+
 	public void logout() {
 		driver.findElement(By.xpath(locator.LogoutButton)).click();
 
